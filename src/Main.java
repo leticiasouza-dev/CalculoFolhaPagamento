@@ -17,20 +17,28 @@ public class Main {
                 "0 - Sair do Programa");
         int opcao = leitor.nextInt();
 
-        if(opcao == 1){
-            System.out.println("foi a opção 1");
-        } else if (opcao == 2) {
-            System.out.println("foi a opção 2");
-        } else if (opcao == 3) {
-            System.out.println("foi a opção 3");
-        } else if (opcao == 4) {
-            System.out.println("foi a opção 4");
-        } else if (opcao == 5) {
-            System.out.println("foi a opção 5");
-        } else if (opcao == 0){
-            System.out.println("estou saindo");
-        } else {
-            System.out.println("opção inválida");
+        switch (opcao){
+            case 1:
+                System.out.println("Cadastrar colaborador padrão");
+                break;
+            case 2:
+                System.out.println("Cadastrar colaborador comissionado");
+                break;
+            case 3:
+                System.out.println("colaborador produção ");
+                break;
+            case 4:
+                System.out.println("Gerar folha de pagamento");
+                break;
+            case 5:
+                System.out.println("Exibir folha");
+                break;
+            case 0:
+                System.out.println("Sair do programama");
+                break;
+            default:
+                System.out.println("Opção invalida");
+                break;
         }
     }
 }
